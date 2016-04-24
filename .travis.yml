@@ -1,2 +1,13 @@
 language: java
 jdk: oraclejdk8
+deploy:
+  edge: true
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: daniel.murygin@gmail.com
+  password:
+    secure: BQbvzCiCaM5ODm823gHUiqJ4cu3U0BbmiGdkUnSHTImX0l8jMua/RUBobK92gePw5oNy6Jp6dR34lHL8LJKkm90FtQVCRnwpoAU7cI5JtUntAJktO99WTEAuGKxdJ+vKV2MjrFkmYVgDwd6MNfWLuLLn2jmzgk9sqaPBaemf1fs//Rw06n6d9JGb1cgsjMfZso7V8LD2IpaSUQC4737zPyPsz0ps6f/YqGVLNzopAKOJpd/BrOEw9z/pL0xhg0A2DCjIJXTonal8JLTMwPmcZLo1kDqbQCrq7dwdrShN4e+lCcR5d7GgRfLjIfHv+/m+Ww4/ha911BCwALVGXu6TUeiAU0yU40Cm+XupZ6Z7+gGnLAO0M9xn73xkZFDRCtDRjJosMayYUq0xCZyvn7fClBu8FaoRyEFa4UJRVM989XVLGj6Zo2MV0NN5NptvVNak2AT77kwCXxBM8OwUnxsZZMXw1oBgNX+GoK8zIL0ABlQzd5HxYINY1i+p7KnJoE1bYO9ykZ83AoPRbv+YMBlASUEsFDw81m+ueqZFh8O+T0Mfi8S4+exV9glUJ5PpPFM91CqzgZfGtCOwUcPd6t/ZQfsPYGPJqUH9/qMqmwqM+SFfiempwTlRYVkNtx2a5ZZFjvoV4pfIg9p95dYRnaWW2vJNpSwRoYrOFr8pvcBnhaU=
+  organization: murygin
+  space: development
+  on:
+    repo: murygin/spring-rest-service
