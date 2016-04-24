@@ -1,3 +1,4 @@
 ---
 applications:
 - name: spring-rest-service
+  path: target/gs-rest-service-0.1.0.jar
